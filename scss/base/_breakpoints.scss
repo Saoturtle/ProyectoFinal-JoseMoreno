@@ -1,0 +1,7 @@
+@mixin query ( $medida : 1250px ){
+    @media screen and (max-width: $medida) {
+        @content;
+    }
+}
+
+

@@ -1,0 +1,59 @@
+@mixin reset{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin hover{
+    text-decoration: none;
+    color: white;
+    box-shadow: inset 0 0 0 0 #97DBAE;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+@mixin hover2{
+    box-shadow: inset 800px 0 0 0 white;
+    color: white;
+}
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin pvalores{
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+@mixin tipovalores {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+@mixin imgtipovalores{
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+}
+
+@mixin imgTurtleTipo{
+    width: 220px;
+    height: 220px;
+}
+
+@mixin gradient {
+    background-color: #97DBAE;
+}
+
+@mixin imgciclo {
+    width: 500px;
+    height: 334px;
+    border-radius: 5px;
+}

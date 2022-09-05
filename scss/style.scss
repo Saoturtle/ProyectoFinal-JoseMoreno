@@ -1,0 +1,965 @@
+@import "base/variables";
+@import "base/mixin";
+@import "base/breakpoints";
+
+*{
+    @include reset;
+}
+
+p{
+    color: $color-texto;
+    font-family: Helvetica;
+    font-weight: 500;
+}
+
+a{
+    @include hover;
+}
+
+a:hover{
+    @include hover2;
+}
+
+.header{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background-color: $color-principal;
+    .navBarHeader{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+    .imgLogo{
+        border-radius: 50px;
+    }
+}
+
+.divPortada{
+    @include flex;
+    gap: 100px;
+    background-color: $color-principal;
+    height: 85vh;
+    .imgPortada{
+        animation: move-image 3s linear infinite;
+    }
+    @keyframes move-image {
+        0%{
+            transform: translateY(15px);
+        }50%{
+            transform: translateY(0px);
+        }100%{
+            transform: translateY(15px);
+        }         
+    }
+    .divPortada2{ 
+        flex-direction: column;
+        padding: 50px;
+        h1{
+            color: $color-h1;
+            font-size: 5rem;
+            font: bold;
+        }
+        p{
+            color: $color-texto;
+            font-style: italic;
+            margin-left: 20px;
+        }
+    }
+}
+
+.main{
+    @include flex;
+    text-align: center;
+    .sectionMain{
+        margin-top: 10rem;
+        width: 85%;
+        margin-bottom: 10rem;
+        p{
+            font-size: 1.5rem;
+            font: bold;    
+        }
+        iframe{
+            margin-top: 25px;
+        }
+    }  
+}
+
+.footer{
+    background-color: $color-principal;
+    @include flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    a{
+        font-size: 1.2rem;
+        color: $color-texto;
+    }
+    h3{
+        font-size: 1.3rem;
+        color: $color-texto;
+    }
+}
+
+/* estilos html tipos */
+
+.containerGrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 1fr 0.2fr 0.3fr 0.3fr repeat(7,auto);
+    grid-template-areas:
+    "parrafoMainTipo parrafoMainTipo parrafoMainTipo parrafoMainTipo"
+    "hDos hDos hDos hDos" 
+    "tipo1 tipo2 tipo2 tipo3"
+    "tipo4 tipo5 tipo6 tipo7"
+    "tipoTortu1 tipoTortu1 tipoTortu1 tipoTortu1"
+    "tipoTortu2 tipoTortu2 tipoTortu2 tipoTortu2"
+    "tipoTortu3 tipoTortu3 tipoTortu3 tipoTortu3"
+    "tipoTortu4 tipoTortu4 tipoTortu4 tipoTortu4"
+    "tipoTortu5 tipoTortu5 tipoTortu5 tipoTortu5"
+    "tipoTortu6 tipoTortu6 tipoTortu6 tipoTortu6"
+    "tipoTortu7 tipoTortu7 tipoTortu7 tipoTortu7";
+    gap: 2rem;
+    .parrafoMainTipo{
+        grid-area: parrafoMainTipo;
+        @include flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: $color-principal;
+        margin-bottom: 2rem;
+        height: 85vh;
+        h2{
+            color: $color-h1;
+            margin-top: 2.5rem;
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+        p{
+            font-size: 1.5rem;
+            font: bold;
+            width: 85%;
+        }
+    }
+    
+    .hDos{
+        grid-area: hDos;
+        color: $color-h1;
+        @include flex;
+        h3{
+            font-size: 2rem;
+        }
+    }
+    .tipo1{
+        grid-area: tipo1;
+        @include flex;
+        background-color: $color-principal;
+        .imgTurtleTipo{
+            @include imgTurtleTipo;
+        }
+        a{
+            color: $color-texto;
+        } 
+    }
+    .tipo2{
+        grid-area: tipo2;
+        @include flex;
+        background-color: $color-principal;
+        .imgTurtleTipo{
+            @include imgTurtleTipo;
+        }
+        a{
+            color: $color-texto;
+        } 
+    }
+    .tipo3{
+        grid-area: tipo3;
+        @include flex;
+        background-color: $color-principal;
+        .imgTurtleTipo{
+            @include imgTurtleTipo;
+        }
+        a{
+            color: $color-texto;
+        } 
+    }
+    .tipo4{
+        grid-area: tipo4;
+        @include flex;
+        background-color: $color-principal;
+        .imgTurtleTipo{
+            @include imgTurtleTipo;
+        }
+        a{
+            color: $color-texto;
+        } 
+    }
+    .tipo5{
+        grid-area: tipo5;
+        @include flex;
+        background-color: $color-principal;
+        .imgTurtleTipo{
+            @include imgTurtleTipo;
+        }
+        a{
+            color: $color-texto;
+        } 
+    }
+    .tipo6{
+        grid-area: tipo6;
+        @include flex;
+        background-color: $color-principal;
+        .imgTurtleTipo{
+            @include imgTurtleTipo;
+        }
+        a{
+            color: $color-texto;
+        } 
+    }
+    .tipo7{
+        grid-area: tipo7;
+        @include flex;
+        background-color: $color-principal;
+        .imgTurtleTipo{
+            @include imgTurtleTipo;
+        }
+        a{
+            color: $color-texto;
+        } 
+    }
+
+    .tipoTortu1{
+        grid-area: tipoTortu1;
+        @include flex;
+        flex-direction: column;
+        gap: 3rem;
+        @include imgtipovalores;
+        width: 65%;
+        border: 2px solid $color-principal;
+        margin-top: 10rem;
+        border-radius: 10px;
+        padding: 100px 10px 25px 20px;
+        .parrafoTipo{
+            grid-area: parrafoTipo;
+            @include tipovalores;
+            h3{
+                color: $color-h1;
+            }
+            p{
+                @include pvalores;
+            }
+        }
+    }
+
+    .tipoTortu2{
+        grid-area: tipoTortu2;
+        @include flex;
+        flex-direction: column;
+        gap: 3rem;
+        @include imgtipovalores;
+        width: 65%;
+        border: 2px solid $color-principal;
+        margin-top: 10rem;
+        border-radius: 10px;
+        padding: 100px 10px 25px 20px;
+        .parrafoTipo{
+            grid-area: parrafoTipo;
+            @include tipovalores;
+            h3{
+                color: $color-h1;
+            }
+            p{
+                @include pvalores;
+            }
+        }
+    }
+
+    .tipoTortu3{
+        grid-area: tipoTortu3;
+        @include flex;
+        flex-direction: column;
+        gap: 3rem;
+        @include imgtipovalores;
+        width: 65%;
+        border: 2px solid $color-principal;
+        margin-top: 10rem;
+        border-radius: 10px;
+        padding: 100px 10px 25px 20px;
+        .parrafoTipo{
+            grid-area: parrafoTipo;
+            @include tipovalores;
+            h3{
+                color: $color-h1;
+            }
+            p{
+                @include pvalores;
+            }
+        }
+    }
+
+    .tipoTortu4{
+        grid-area: tipoTortu4;
+        @include flex;
+        flex-direction: column;
+        gap: 3rem;
+        @include imgtipovalores;
+        width: 65%;
+        border: 2px solid $color-principal;
+        margin-top: 10rem;
+        border-radius: 10px;
+        padding: 100px 10px 25px 20px;
+        .parrafoTipo{
+            grid-area: parrafoTipo;
+            @include tipovalores;
+            h3{
+                color: $color-h1;
+            }
+            p{
+                @include pvalores;
+            }
+        }
+    }
+
+    .tipoTortu5{
+        grid-area: tipoTortu5;
+        @include flex;
+        flex-direction: column;
+        gap: 3rem;
+        @include imgtipovalores;
+        width: 65%;
+        border: 2px solid $color-principal;
+        margin-top: 10rem;
+        border-radius: 10px;
+        padding: 100px 10px 25px 20px;
+        .parrafoTipo{
+            grid-area: parrafoTipo;
+            @include tipovalores;
+            h3{
+                color: $color-h1;
+            }
+            p{
+                @include pvalores;
+            }
+        }
+    }
+
+    .tipoTortu6{
+        grid-area: tipoTortu6;
+        @include flex;
+        flex-direction: column;
+        gap: 3rem;
+        @include imgtipovalores;
+        width: 65%;
+        border: 2px solid $color-principal;
+        margin-top: 10rem;
+        border-radius: 10px;
+        padding: 100px 10px 25px 20px;
+        .parrafoTipo{
+            grid-area: parrafoTipo;
+            @include tipovalores;
+            h3{
+                color: $color-h1;
+            }
+            p{
+                @include pvalores;
+            }
+        }
+    }
+
+    .tipoTortu7{
+        grid-area: tipoTortu7;
+        @include flex;
+        flex-direction: column;
+        gap: 3rem;
+        @include imgtipovalores;
+        width: 65%;
+        border: 2px solid $color-principal;
+        margin-top: 10rem;
+        border-radius: 10px;
+        padding: 100px 10px 25px 20px;
+        margin-bottom: 10rem;
+        .parrafoTipo{
+            grid-area: parrafoTipo;
+            @include tipovalores;
+            h3{
+                color: $color-h1;
+            }
+            p{
+                @include pvalores;
+            }
+        }
+    }
+
+    .imgTurtle{
+        border-radius: 10px;
+    }
+}
+
+/* estilos html alimentación */
+
+.containerGridDos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.6fr 0.2fr 1fr 1fr;
+    grid-template-areas: 
+    "sectionGridDos"
+    "sectionGridDos2"
+    "sectionGridDos3"
+    "videoGridDos";
+    .sectionGridDos{
+        grid-area: sectionGridDos;
+        @include flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 2rem;
+        background-color: $color-principal;
+        height: 85vh;
+        h2{
+            color: $color-h1;
+            margin-top: 2rem;
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+        p{
+            font-size: 1.5rem;
+            font: bold;
+            width: 85%;
+        }
+    }
+
+    .sectionGridDos2{
+        grid-area: sectionGridDos2;
+        @include flex;
+        flex-direction: column;
+        text-align: center;
+        h3{
+            color: $color-h1;
+            margin-bottom: 1rem;
+        }
+        p{
+            background-color: $color-principal;
+            @include pvalores;
+        }
+    }
+
+    .sectionGridDos3{
+        grid-area: sectionGridDos3;
+        @include flex;
+        flex-direction: column;
+        text-align: center;
+        table{
+            border-spacing: 5px;
+            font-size: 20px;
+            background-color: $color-principal;
+            tr{
+                th{
+                    text-align: center;
+                    padding: 5px;
+                    border: 3px solid white;
+                }
+                td{
+                    border: 3px solid white;
+                    padding: 5px;
+                    color: $color-texto;
+                }
+            }
+        }
+    }
+
+    .videoGridDos{
+        grid-area: videoGridDos;
+        @include flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10rem;
+        p{
+            background-color: $color-principal;
+            @include pvalores;
+        }
+    }
+}
+
+/* estilos html cilo e historia */
+.mainFlex{
+    @include flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 3rem;
+
+    .sectionFlex{
+        background-color: $color-principal;
+        height: 85vh;
+        margin-bottom: 2rem;
+        h2{
+            color: $color-h1;
+            font-size: 3rem;
+            margin-top: 10rem;
+        }
+        p{
+            font-size: 1.5rem;
+            font: bold;
+            padding: 5%;
+        }
+    }
+
+    .htresDivFlex{
+        color: $color-h1;
+    }
+
+    .sectionFlex2{
+        @include flex;
+        background-color: $color-principal;
+        font-size: 20px;
+        width: 85%;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border-radius: 5px;
+        ul{
+            li{
+                list-style: none;
+                text-align: left;
+            }
+        } 
+        b{
+            color: $color-h1
+        }
+        .imgTurtle{
+            @include imgciclo;
+        }
+    }
+    .sectionFlex3{
+        @include flex;
+        width: 65%;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        border: 1px solid $color-principal;
+        padding: 1rem;
+        .imgTurtle{
+            @include imgciclo;
+        }
+        p{
+            text-align: justify;
+        }
+    } 
+    .sectionFinal{
+        margin-bottom: 10rem;
+    }
+}
+
+
+/* estilos html voluntariado */
+
+.voluntariado{
+    .voluntariadoPortada{
+        background-color: $color-principal;
+        height: 85vh;
+        h2{
+            color: $color-h1;
+            font-size: 3rem;
+            margin-top: 9rem;
+        }
+        .voluntarioTexto{
+            p{
+            font-size: 1.5rem;
+            font: bold;
+            padding: 0px 5% 5% 5%;
+            }
+        }
+    } 
+
+    .voluntariadoSection{
+        background-color: $color-principal;
+        h3{
+            color: $color-h1;
+        }
+        p{
+            font-size: $size-texto;
+        }
+    
+        li{
+            font-size: $size-texto;
+        }
+    }
+
+    div{
+        h3{
+            color: $color-h1;
+        }
+    }
+    .formAlgo{
+        border: $color-principal solid 2px;
+    }
+
+    textarea{
+        max-width: 90%;
+    }
+}
+
+@include query(1250px){
+
+    // INDEX INDEX INDEX INDEX INDEX
+    .divPortada{
+        flex-direction: column;
+    }
+    .divPortada2{
+        padding: 20px;
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            margin-left: 18px;
+        }
+    }
+
+    // TIPOS TIPOS TIPOS TIPOS
+    .containerGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+        grid-template-areas:
+        "parrafoMainTipo"
+        "hDos"
+        "tipo1"
+        "tipo2"
+        "tipo3"
+        "tipo4"
+        "tipo5"
+        "tipo6"
+        "tipo7"
+        "tipoTortu1" 
+        "tipoTortu2"
+        "tipoTortu3"
+        "tipoTortu4"
+        "tipoTortu5"
+        "tipoTortu6"
+        "tipoTortu7";
+        .parrafoMainTipo{
+            h2{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+        .hDos{
+            h3{
+                font-size: 1.7rem;
+            }
+        }
+
+        .tipo1{
+            .imgTurtleTipo{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .tipo2{
+            .imgTurtleTipo{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .tipo3{
+            .imgTurtleTipo{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .tipo4{
+            .imgTurtleTipo{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .tipo5{
+            .imgTurtleTipo{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .tipo6{
+            .imgTurtleTipo{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .tipo7{
+            .imgTurtleTipo{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .tipoTortu1{
+            width: 85%;
+        }
+        .tipoTortu2{
+            width: 85%;
+        }
+        .tipoTortu3{
+            width: 85%;
+        }
+        .tipoTortu4{
+            width: 85%;
+        }
+        .tipoTortu5{
+            width: 85%;
+        }
+        .tipoTortu6{
+            width: 85%;
+        }
+        .tipoTortu7{
+            width: 85%;
+            margin-bottom: 5rem;
+        }
+    }
+    
+    // ALIMENTACION ALIMENTACION ALIMENTACION ALIMENTACION
+    .containerGridDos{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "sectionGridDos"
+        "sectionGridDos2"
+        "sectionGridDos3"
+        "videoGridDos";
+        .sectionGridDos{
+            h2{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+        .sectionGridDos3{
+            margin-bottom: 25px;
+        }
+
+        .videoGridDos{
+            p{
+                font-size: 1.2rem;
+            }
+        }
+
+        .video{
+            width:350px;
+            height:250px;
+        }
+    }
+
+    // CICLO CICLO CICLO CICLO
+    .mainFlex{
+        .sectionFlex{
+            h2{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+        .sectionFlex2{
+            .imgTurtle{
+                width: 350px;
+                height: 250px;
+            }
+            p{
+                font-size: 1.1rem;
+            }
+        }
+        .sectionFlex3{
+            .imgTurtle{
+                width: 350px;
+                height: 250px;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .imgLogo{
+        height: 50px;
+        width: 50px;
+    }
+
+    // VOLUNTARIADO VOLUNTARIADO VOLUNTARIADO VOLUNTARIADO
+    .voluntariado{
+        .voluntariadoPortada{
+            h2{
+                font-size: 2rem;
+            }
+            .voluntarioTexto{
+                p{
+                font-size: 1.2rem;
+                }
+            }
+        }
+        .voluntariadoSection{
+            height: 70%;
+        }
+    }
+}
+
+
+@include query(992px){
+    .divPortada{
+        flex-direction: column;
+    }
+    .divPortada2{
+        padding: 15px;
+        h1{
+            font-size: 3.5rem;
+        }
+    }
+    .sectionMain{
+        p{
+            font-size: 1.3rem;
+        }
+    }
+
+    .mainFlex{
+        .sectionFlex2{
+            flex-direction: column;
+            width: 100%;
+            gap: 1rem;
+        }
+        .sectionFlex3{
+            flex-direction: column;
+            width: 85%;
+            gap: 1rem;
+        }
+    }
+}
+
+@include query(768px){
+    .main{
+        .sectionMain{
+            p{
+                font-size: 1.2rem;
+                text-align: justify;
+            }
+        }
+    }
+    .containerGrid{
+        .parrafoMainTipo{
+            h2{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 1rem;
+                text-align: justify;
+            }
+        }
+        .hDos{
+            h3{
+                font-size: 1.3rem;
+            }
+        }
+        .tipoTortu1, .tipoTortu2, .tipoTortu3, .tipoTortu4, .tipoTortu5, .tipoTortu6, .tipoTortu7{
+            .imgTurtle{
+                width: 350px;
+                height: 250px;
+            }
+            .parrafoTipo{
+                p{
+                font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .containerGridDos{
+        .sectionGridDos{
+            h2{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 1rem;
+                text-align: justify;
+            }
+        }
+        .sectionGridDos2{
+            h3{
+                font-size: 1.3rem;
+            }
+            p{
+                font-size: 1rem;
+                text-align: justify;
+            }
+        }
+        .sectionGridDos3{
+            table{
+                font-size: 1rem;
+            }
+        }
+        .videoGridDos{
+            p{
+                font-size: 1rem;  
+            }
+        }
+    }
+
+    .mainFlex{
+        .sectionFlex{
+            h2{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 1rem;
+                text-align: justify;
+            }
+        }
+        .sectionFlex2{
+            p{
+                font-size: 1rem;
+                text-align: justify;
+            }
+            padding: 20px;
+            ul{
+                li{
+                    font-size: 1rem;
+                }
+            } 
+        } 
+        .sectionFlex3{
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .voluntariado{
+        .voluntariadoPortada{
+            h2{
+                font-size: 1.5rem;
+            }
+            .voluntarioTexto{
+                p{
+                font-size: 1rem;
+                text-align: justify;
+                }
+            }
+        }
+        .voluntariadoSection{
+            h3{
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+            ul{
+                li{
+                    font-size: 1rem;
+                }
+            }
+        }
+        .h3Voluntario{
+            h3{
+                font-size: 1.2rem;
+            }   
+        }
+    } 
+}
+
+@include query(576px){
+    .video{
+        width:350px;
+        height:150px;
+    }
+}
+
