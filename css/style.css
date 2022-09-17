@@ -207,10 +207,10 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 3rem;
     align-items: center;
     justify-self: center;
     text-align: center;
+    gap: 3rem;
     width: 65%;
     border: 2px solid #97DBAE;
     margin-top: 10rem;
@@ -218,7 +218,7 @@ a:hover {
     padding: 100px 10px 25px 20px; }
     .containerGrid .tipoTortu1 .parrafoTipo {
       grid-area: parrafoTipo;
-      align-self: center;
+      align-items: center;
       justify-self: center;
       text-align: center; }
       .containerGrid .tipoTortu1 .parrafoTipo h3 {
@@ -233,10 +233,10 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 3rem;
     align-items: center;
     justify-self: center;
     text-align: center;
+    gap: 3rem;
     width: 65%;
     border: 2px solid #97DBAE;
     margin-top: 10rem;
@@ -244,7 +244,7 @@ a:hover {
     padding: 100px 10px 25px 20px; }
     .containerGrid .tipoTortu2 .parrafoTipo {
       grid-area: parrafoTipo;
-      align-self: center;
+      align-items: center;
       justify-self: center;
       text-align: center; }
       .containerGrid .tipoTortu2 .parrafoTipo h3 {
@@ -259,10 +259,10 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 3rem;
     align-items: center;
     justify-self: center;
     text-align: center;
+    gap: 3rem;
     width: 65%;
     border: 2px solid #97DBAE;
     margin-top: 10rem;
@@ -270,7 +270,7 @@ a:hover {
     padding: 100px 10px 25px 20px; }
     .containerGrid .tipoTortu3 .parrafoTipo {
       grid-area: parrafoTipo;
-      align-self: center;
+      align-items: center;
       justify-self: center;
       text-align: center; }
       .containerGrid .tipoTortu3 .parrafoTipo h3 {
@@ -285,10 +285,10 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 3rem;
     align-items: center;
     justify-self: center;
     text-align: center;
+    gap: 3rem;
     width: 65%;
     border: 2px solid #97DBAE;
     margin-top: 10rem;
@@ -296,7 +296,7 @@ a:hover {
     padding: 100px 10px 25px 20px; }
     .containerGrid .tipoTortu4 .parrafoTipo {
       grid-area: parrafoTipo;
-      align-self: center;
+      align-items: center;
       justify-self: center;
       text-align: center; }
       .containerGrid .tipoTortu4 .parrafoTipo h3 {
@@ -311,10 +311,10 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 3rem;
     align-items: center;
     justify-self: center;
     text-align: center;
+    gap: 3rem;
     width: 65%;
     border: 2px solid #97DBAE;
     margin-top: 10rem;
@@ -322,7 +322,7 @@ a:hover {
     padding: 100px 10px 25px 20px; }
     .containerGrid .tipoTortu5 .parrafoTipo {
       grid-area: parrafoTipo;
-      align-self: center;
+      align-items: center;
       justify-self: center;
       text-align: center; }
       .containerGrid .tipoTortu5 .parrafoTipo h3 {
@@ -337,10 +337,10 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 3rem;
     align-items: center;
     justify-self: center;
     text-align: center;
+    gap: 3rem;
     width: 65%;
     border: 2px solid #97DBAE;
     margin-top: 10rem;
@@ -348,7 +348,7 @@ a:hover {
     padding: 100px 10px 25px 20px; }
     .containerGrid .tipoTortu6 .parrafoTipo {
       grid-area: parrafoTipo;
-      align-self: center;
+      align-items: center;
       justify-self: center;
       text-align: center; }
       .containerGrid .tipoTortu6 .parrafoTipo h3 {
@@ -363,19 +363,18 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 3rem;
     align-items: center;
     justify-self: center;
     text-align: center;
+    gap: 3rem;
     width: 65%;
     border: 2px solid #97DBAE;
     margin-top: 10rem;
     border-radius: 10px;
-    padding: 100px 10px 25px 20px;
-    margin-bottom: 10rem; }
+    padding: 100px 10px 25px 20px; }
     .containerGrid .tipoTortu7 .parrafoTipo {
       grid-area: parrafoTipo;
-      align-self: center;
+      align-items: center;
       justify-self: center;
       text-align: center; }
       .containerGrid .tipoTortu7 .parrafoTipo h3 {
@@ -391,7 +390,7 @@ a:hover {
 .containerGridDos {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1.6fr 0.2fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
   grid-template-areas: "sectionGridDos" "sectionGridDos2" "sectionGridDos3" "videoGridDos"; }
   .containerGridDos .sectionGridDos {
     grid-area: sectionGridDos;
@@ -433,7 +432,8 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 1rem; }
     .containerGridDos .sectionGridDos3 table {
       border-spacing: 5px;
       font-size: 20px;
@@ -475,7 +475,7 @@ a:hover {
     .mainFlex .sectionFlex h2 {
       color: #5F3535;
       font-size: 3rem;
-      margin-top: 10rem; }
+      margin-top: 7%; }
     .mainFlex .sectionFlex p {
       font-size: 1.5rem;
       font: bold;
@@ -527,7 +527,7 @@ a:hover {
   .voluntariado .voluntariadoPortada h2 {
     color: #5F3535;
     font-size: 3rem;
-    margin-top: 9rem; }
+    margin-top: 7%; }
   .voluntariado .voluntariadoPortada .voluntarioTexto p {
     font-size: 1.5rem;
     font: bold;
@@ -648,10 +648,10 @@ a:hover {
 @media screen and (max-width: 992px) {
   .divPortada {
     flex-direction: column; }
-  .divPortada2 {
-    padding: 15px; }
-    .divPortada2 h1 {
-      font-size: 3.5rem; }
+    .divPortada .divPortada2 {
+      padding: 15px; }
+      .divPortada .divPortada2 h1 {
+        font-size: 3.5rem; }
   .sectionMain p {
     font-size: 1.3rem; }
   .mainFlex .sectionFlex2 {
@@ -661,9 +661,30 @@ a:hover {
   .mainFlex .sectionFlex3 {
     flex-direction: column;
     width: 85%;
-    gap: 1rem; } }
+    gap: 1rem; }
+  .voluntariado .voluntariadoPortada {
+    flex-direction: column;
+    gap: 5rem; }
+    .voluntariado .voluntariadoPortada h2 {
+      margin-top: 10rem;
+      font-size: 1.5rem;
+      margin-bottom: 5rem; }
+    .voluntariado .voluntariadoPortada p {
+      font-size: 1rem;
+      text-align: justify; }
+    .voluntariado .voluntariadoPortada .voluntarioTexto p {
+      font-size: 1rem;
+      text-align: justify; }
+    .voluntariado .voluntariadoPortada .voluntariadoSection h3 {
+      font-size: 1.2rem; }
+    .voluntariado .voluntariadoPortada .voluntariadoSection p {
+      font-size: 1rem; }
+    .voluntariado .voluntariadoPortada .voluntariadoSection ul li {
+      font-size: 1rem; }
+    .voluntariado .voluntariadoPortada .h3Voluntario h3 {
+      font-size: 1.2rem; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
   .main .sectionMain p {
     font-size: 1.2rem;
     text-align: justify; }
@@ -694,7 +715,9 @@ a:hover {
   .containerGridDos .videoGridDos p {
     font-size: 1rem; }
   .mainFlex .sectionFlex h2 {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem; }
   .mainFlex .sectionFlex p {
     font-size: 1rem;
     text-align: justify; }
@@ -707,21 +730,103 @@ a:hover {
       font-size: 1rem; }
   .mainFlex .sectionFlex3 p {
     font-size: 1rem; }
-  .voluntariado .voluntariadoPortada h2 {
-    font-size: 1.5rem; }
-  .voluntariado .voluntariadoPortada .voluntarioTexto p {
-    font-size: 1rem;
-    text-align: justify; }
-  .voluntariado .voluntariadoSection h3 {
-    font-size: 1.2rem; }
-  .voluntariado .voluntariadoSection p {
-    font-size: 1rem; }
-  .voluntariado .voluntariadoSection ul li {
-    font-size: 1rem; }
-  .voluntariado .h3Voluntario h3 {
-    font-size: 1.2rem; } }
+  .voluntariado .voluntariadoPortada {
+    flex-direction: column;
+    gap: 2.5rem; }
+    .voluntariado .voluntariadoPortada h2 {
+      margin-top: 10rem;
+      font-size: 1.5rem;
+      margin-bottom: 5rem; }
+    .voluntariado .voluntariadoPortada p {
+      font-size: 1rem;
+      text-align: justify; } }
 
 @media screen and (max-width: 576px) {
   .video {
-    width: 350px;
-    height: 150px; } }
+    width: 300px;
+    height: 180px; }
+  .voluntariado .voluntariadoPortada {
+    flex-direction: column;
+    gap: 0; }
+    .voluntariado .voluntariadoPortada h2 {
+      margin-top: 5rem; }
+  .voluntariado .voluntariadoSection p {
+    text-align: justify; } }
+
+@media screen and (max-width: 420px) {
+  .divPortada .divPortada2 h1 {
+    font-size: 3rem; }
+  .containerGrid .tipoTortu1 {
+    width: 100%;
+    padding: 75px 0 0 0;
+    border: none; }
+    .containerGrid .tipoTortu1 p {
+      text-align: justify;
+      background-color: #97DBAE; }
+  .containerGrid .tipoTortu2 {
+    width: 100%;
+    padding: 75px 0 0 0;
+    border: none; }
+    .containerGrid .tipoTortu2 p {
+      text-align: justify;
+      background-color: #97DBAE; }
+  .containerGrid .tipoTortu3 {
+    width: 100%;
+    padding: 75px 0 0 0;
+    border: none; }
+    .containerGrid .tipoTortu3 p {
+      text-align: justify;
+      background-color: #97DBAE; }
+  .containerGrid .tipoTortu4 {
+    width: 100%;
+    padding: 75px 0 0 0;
+    border: none; }
+    .containerGrid .tipoTortu4 p {
+      text-align: justify;
+      background-color: #97DBAE; }
+  .containerGrid .tipoTortu5 {
+    width: 100%;
+    padding: 75px 0 0 0;
+    border: none; }
+    .containerGrid .tipoTortu5 p {
+      text-align: justify;
+      background-color: #97DBAE; }
+  .containerGrid .tipoTortu6 {
+    width: 100%;
+    padding: 75px 0 0 0;
+    border: none; }
+    .containerGrid .tipoTortu6 p {
+      text-align: justify;
+      background-color: #97DBAE; }
+  .containerGrid .tipoTortu7 {
+    width: 100%;
+    padding: 75px 0 0 0;
+    border: none; }
+    .containerGrid .tipoTortu7 p {
+      text-align: justify;
+      background-color: #97DBAE; }
+  .mainFlex .sectionFlex h2 {
+    margin-top: 5rem; }
+  .mainFlex .sectionFlex h2 {
+    font-size: 1.5rem; }
+  .mainFlex .sectionFlex p {
+    font-size: 1rem;
+    text-align: justify; }
+  .mainFlex .sectionFlex3 .imgTurtle {
+    width: 300px;
+    height: 250px; } }
+
+@media screen and (max-width: 375px) {
+  .divPortada .divPortada2 {
+    text-align: center; }
+    .divPortada .divPortada2 h1 {
+      font-size: 2rem; }
+  .divPortada .imgPortada {
+    width: 250px;
+    height: 150px; }
+  .mainFlex .sectionFlex h2 {
+    margin-top: 2rem;
+    margin-bottom: 0; }
+  .voluntariado .voluntariadoPortada h2 {
+    margin-top: 2rem;
+    margin-bottom: 0; } }

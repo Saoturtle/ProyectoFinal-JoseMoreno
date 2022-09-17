@@ -1,6 +1,7 @@
 @import "base/variables";
 @import "base/mixin";
 @import "base/breakpoints";
+@import "base/listas";
 
 *{
     @include reset;
@@ -54,12 +55,12 @@ a:hover{
         flex-direction: column;
         padding: 50px;
         h1{
-            color: $color-h1;
+            color: nth($colores, 3);
             font-size: 5rem;
             font: bold;
         }
         p{
-            color: $color-texto;
+            color: nth($colores, 4);
             font-style: italic;
             margin-left: 20px;
         }
@@ -90,11 +91,11 @@ a:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     a{
         font-size: 1.2rem;
-        color: $color-texto;
+        color: nth($colores, 4);
     }
     h3{
         font-size: 1.3rem;
-        color: $color-texto;
+        color: nth($colores, 4);
     }
 }
 
@@ -126,7 +127,7 @@ a:hover{
         margin-bottom: 2rem;
         height: 85vh;
         h2{
-            color: $color-h1;
+            color: nth($colores, 3);
             margin-top: 2.5rem;
             font-size: 3rem;
             margin-bottom: 3rem;
@@ -140,7 +141,7 @@ a:hover{
     
     .hDos{
         grid-area: hDos;
-        color: $color-h1;
+        color: nth($colores, 3);
         @include flex;
         h3{
             font-size: 2rem;
@@ -154,7 +155,7 @@ a:hover{
             @include imgTurtleTipo;
         }
         a{
-            color: $color-texto;
+            color: nth($colores, 4);
         } 
     }
     .tipo2{
@@ -165,7 +166,7 @@ a:hover{
             @include imgTurtleTipo;
         }
         a{
-            color: $color-texto;
+            color: nth($colores, 4);
         } 
     }
     .tipo3{
@@ -176,7 +177,7 @@ a:hover{
             @include imgTurtleTipo;
         }
         a{
-            color: $color-texto;
+            color: nth($colores, 4);
         } 
     }
     .tipo4{
@@ -187,7 +188,7 @@ a:hover{
             @include imgTurtleTipo;
         }
         a{
-            color: $color-texto;
+            color: nth($colores, 4);
         } 
     }
     .tipo5{
@@ -198,7 +199,7 @@ a:hover{
             @include imgTurtleTipo;
         }
         a{
-            color: $color-texto;
+            color: nth($colores, 4);
         } 
     }
     .tipo6{
@@ -209,7 +210,7 @@ a:hover{
             @include imgTurtleTipo;
         }
         a{
-            color: $color-texto;
+            color: nth($colores, 4);
         } 
     }
     .tipo7{
@@ -220,7 +221,7 @@ a:hover{
             @include imgTurtleTipo;
         }
         a{
-            color: $color-texto;
+            color: nth($colores, 4);
         } 
     }
 
@@ -228,18 +229,13 @@ a:hover{
         grid-area: tipoTortu1;
         @include flex;
         flex-direction: column;
-        gap: 3rem;
-        @include imgtipovalores;
-        width: 65%;
-        border: 2px solid $color-principal;
-        margin-top: 10rem;
-        border-radius: 10px;
-        padding: 100px 10px 25px 20px;
+        @include center;
+        @include tipoValores;
         .parrafoTipo{
             grid-area: parrafoTipo;
-            @include tipovalores;
+            @include center;
             h3{
-                color: $color-h1;
+                color: nth($colores, 3);
             }
             p{
                 @include pvalores;
@@ -251,18 +247,13 @@ a:hover{
         grid-area: tipoTortu2;
         @include flex;
         flex-direction: column;
-        gap: 3rem;
-        @include imgtipovalores;
-        width: 65%;
-        border: 2px solid $color-principal;
-        margin-top: 10rem;
-        border-radius: 10px;
-        padding: 100px 10px 25px 20px;
+        @include center;
+        @include tipoValores;
         .parrafoTipo{
             grid-area: parrafoTipo;
-            @include tipovalores;
+            @include center;
             h3{
-                color: $color-h1;
+                color: nth($colores, 3);
             }
             p{
                 @include pvalores;
@@ -274,18 +265,13 @@ a:hover{
         grid-area: tipoTortu3;
         @include flex;
         flex-direction: column;
-        gap: 3rem;
-        @include imgtipovalores;
-        width: 65%;
-        border: 2px solid $color-principal;
-        margin-top: 10rem;
-        border-radius: 10px;
-        padding: 100px 10px 25px 20px;
+        @include center;
+        @include tipoValores;
         .parrafoTipo{
             grid-area: parrafoTipo;
-            @include tipovalores;
+            @include center;
             h3{
-                color: $color-h1;
+                color: nth($colores, 3);
             }
             p{
                 @include pvalores;
@@ -297,18 +283,13 @@ a:hover{
         grid-area: tipoTortu4;
         @include flex;
         flex-direction: column;
-        gap: 3rem;
-        @include imgtipovalores;
-        width: 65%;
-        border: 2px solid $color-principal;
-        margin-top: 10rem;
-        border-radius: 10px;
-        padding: 100px 10px 25px 20px;
+        @include center;
+        @include tipoValores;
         .parrafoTipo{
             grid-area: parrafoTipo;
-            @include tipovalores;
+            @include center;
             h3{
-                color: $color-h1;
+                color: nth($colores, 3);
             }
             p{
                 @include pvalores;
@@ -320,18 +301,13 @@ a:hover{
         grid-area: tipoTortu5;
         @include flex;
         flex-direction: column;
-        gap: 3rem;
-        @include imgtipovalores;
-        width: 65%;
-        border: 2px solid $color-principal;
-        margin-top: 10rem;
-        border-radius: 10px;
-        padding: 100px 10px 25px 20px;
+        @include center;
+        @include tipoValores;
         .parrafoTipo{
             grid-area: parrafoTipo;
-            @include tipovalores;
+            @include center;
             h3{
-                color: $color-h1;
+                color: nth($colores, 3);
             }
             p{
                 @include pvalores;
@@ -343,18 +319,13 @@ a:hover{
         grid-area: tipoTortu6;
         @include flex;
         flex-direction: column;
-        gap: 3rem;
-        @include imgtipovalores;
-        width: 65%;
-        border: 2px solid $color-principal;
-        margin-top: 10rem;
-        border-radius: 10px;
-        padding: 100px 10px 25px 20px;
+        @include center;
+        @include tipoValores;
         .parrafoTipo{
             grid-area: parrafoTipo;
-            @include tipovalores;
+            @include center;
             h3{
-                color: $color-h1;
+                color: nth($colores, 3);
             }
             p{
                 @include pvalores;
@@ -366,19 +337,13 @@ a:hover{
         grid-area: tipoTortu7;
         @include flex;
         flex-direction: column;
-        gap: 3rem;
-        @include imgtipovalores;
-        width: 65%;
-        border: 2px solid $color-principal;
-        margin-top: 10rem;
-        border-radius: 10px;
-        padding: 100px 10px 25px 20px;
-        margin-bottom: 10rem;
+        @include center;
+        @include tipoValores;
         .parrafoTipo{
             grid-area: parrafoTipo;
-            @include tipovalores;
+            @include center;
             h3{
-                color: $color-h1;
+                color: nth($colores, 3);
             }
             p{
                 @include pvalores;
@@ -396,7 +361,7 @@ a:hover{
 .containerGridDos{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1.6fr 0.2fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: 
     "sectionGridDos"
     "sectionGridDos2"
@@ -411,7 +376,7 @@ a:hover{
         background-color: $color-principal;
         height: 85vh;
         h2{
-            color: $color-h1;
+            color: nth($colores, 3);
             margin-top: 2rem;
             font-size: 3rem;
             margin-bottom: 3rem;
@@ -429,7 +394,7 @@ a:hover{
         flex-direction: column;
         text-align: center;
         h3{
-            color: $color-h1;
+            color: nth($colores, 3);
             margin-bottom: 1rem;
         }
         p{
@@ -443,6 +408,7 @@ a:hover{
         @include flex;
         flex-direction: column;
         text-align: center;
+        margin-bottom: 1rem;
         table{
             border-spacing: 5px;
             font-size: 20px;
@@ -456,7 +422,7 @@ a:hover{
                 td{
                     border: 3px solid white;
                     padding: 5px;
-                    color: $color-texto;
+                    color: nth($colores, 4);
                 }
             }
         }
@@ -487,9 +453,9 @@ a:hover{
         height: 85vh;
         margin-bottom: 2rem;
         h2{
-            color: $color-h1;
+            color: nth($colores, 3);
             font-size: 3rem;
-            margin-top: 10rem;
+            margin-top: 7%;
         }
         p{
             font-size: 1.5rem;
@@ -518,7 +484,7 @@ a:hover{
             }
         } 
         b{
-            color: $color-h1
+            color: nth($colores, 3);
         }
         .imgTurtle{
             @include imgciclo;
@@ -551,9 +517,9 @@ a:hover{
         background-color: $color-principal;
         height: 85vh;
         h2{
-            color: $color-h1;
+            color: nth($colores, 3);
             font-size: 3rem;
-            margin-top: 9rem;
+            margin-top: 7%;
         }
         .voluntarioTexto{
             p{
@@ -567,7 +533,7 @@ a:hover{
     .voluntariadoSection{
         background-color: $color-principal;
         h3{
-            color: $color-h1;
+            color: nth($colores, 3);
         }
         p{
             font-size: $size-texto;
@@ -580,7 +546,7 @@ a:hover{
 
     div{
         h3{
-            color: $color-h1;
+            color: nth($colores, 3);
         }
     }
     .formAlgo{
@@ -799,13 +765,14 @@ a:hover{
 @include query(992px){
     .divPortada{
         flex-direction: column;
-    }
-    .divPortada2{
-        padding: 15px;
-        h1{
-            font-size: 3.5rem;
+        .divPortada2{
+            padding: 15px;
+            h1{
+                font-size: 3.5rem;
+            }
         }
     }
+
     .sectionMain{
         p{
             font-size: 1.3rem;
@@ -824,9 +791,48 @@ a:hover{
             gap: 1rem;
         }
     }
+    .voluntariado{
+        .voluntariadoPortada{
+            flex-direction: column;
+                gap: 5rem;
+            h2{
+                margin-top: 10rem;
+                font-size: 1.5rem;
+                margin-bottom: 5rem;
+            }
+            p{
+                font-size: 1rem;
+                text-align: justify;
+            }
+            .voluntarioTexto{
+                p{
+                font-size: 1rem;
+                text-align: justify;
+                }
+            }
+            .voluntariadoSection{
+                h3{
+                    font-size: 1.2rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+                ul{
+                    li{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .h3Voluntario{
+                h3{
+                    font-size: 1.2rem;
+                }   
+            }
+        }
+    }
 }
 
-@include query(768px){
+@include query(820px){
     .main{
         .sectionMain{
             p{
@@ -835,6 +841,7 @@ a:hover{
             }
         }
     }
+
     .containerGrid{
         .parrafoMainTipo{
             h2{
@@ -862,7 +869,6 @@ a:hover{
             }
         }
     }
-
     .containerGridDos{
         .sectionGridDos{
             h2{
@@ -893,11 +899,12 @@ a:hover{
             }
         }
     }
-
     .mainFlex{
         .sectionFlex{
             h2{
                 font-size: 1.5rem;
+                margin-top: 5rem;
+                margin-bottom: 2.5rem;
             }
             p{
                 font-size: 1rem;
@@ -922,44 +929,175 @@ a:hover{
             }
         }
     }
-
     .voluntariado{
         .voluntariadoPortada{
+            flex-direction: column;
+                gap: 2.5rem;
             h2{
+                margin-top: 10rem;
                 font-size: 1.5rem;
-            }
-            .voluntarioTexto{
-                p{
-                font-size: 1rem;
-                text-align: justify;
-                }
-            }
-        }
-        .voluntariadoSection{
-            h3{
-                font-size: 1.2rem;
+                margin-bottom: 5rem;
             }
             p{
                 font-size: 1rem;
-            }
-            ul{
-                li{
-                    font-size: 1rem;
-                }
+                text-align: justify;
             }
         }
-        .h3Voluntario{
-            h3{
-                font-size: 1.2rem;
-            }   
-        }
-    } 
+    }  
 }
+
 
 @include query(576px){
     .video{
-        width:350px;
-        height:150px;
+        width:300px;
+        height:180px;
+    }
+    .voluntariado{
+        .voluntariadoPortada{
+            flex-direction: column;
+                gap: 0;
+            h2{
+                margin-top: 5rem;
+            }
+        }
+        .voluntariadoSection{
+            p{
+                text-align: justify;
+            }
+        }
     }
 }
+
+@include query(420px){
+    .divPortada{
+        .divPortada2{
+            h1{
+                font-size: 3rem;
+            }
+        }
+    }
+    .containerGrid{
+        .tipoTortu1{
+            width: 100%;
+            padding: 75px 0 0 0;
+            border: none;
+            p{
+                text-align: justify;
+                background-color: $color-principal;
+            }
+        }
+        .tipoTortu2{
+            width: 100%;
+            padding: 75px 0 0 0;
+            border: none;
+            p{
+                text-align: justify;
+                background-color: $color-principal;
+            }
+        }
+        .tipoTortu3{
+            width: 100%;
+            padding: 75px 0 0 0;
+            border: none;
+            p{
+                text-align: justify;
+                background-color: $color-principal;
+            }
+        }
+        .tipoTortu4{
+            width: 100%;
+            padding: 75px 0 0 0;
+            border: none;
+            p{
+                text-align: justify;
+                background-color: $color-principal;
+            }
+        }
+        .tipoTortu5{
+            width: 100%;
+            padding: 75px 0 0 0;
+            border: none;
+            p{
+                text-align: justify;
+                background-color: $color-principal;
+            }
+        }
+        .tipoTortu6{
+            width: 100%;
+            padding: 75px 0 0 0;
+            border: none;
+            p{
+                text-align: justify;
+                background-color: $color-principal;
+            }
+        }
+        .tipoTortu7{
+            width: 100%;
+            padding: 75px 0 0 0;
+            border: none;
+            p{
+                text-align: justify;
+                background-color: $color-principal;
+            }
+        }
+    }
+    .mainFlex{
+        .sectionFlex{
+            h2{
+                margin-top: 5rem;
+            }
+        }
+    }
+
+    .mainFlex{
+        .sectionFlex{
+            h2{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 1rem;
+                text-align: justify;
+            }
+        }
+        .sectionFlex3{
+            .imgTurtle{
+                width: 300px;
+                height: 250px;
+            }
+        }
+    }
+}
+
+@include query(375px){
+    .divPortada{
+        .divPortada2{
+            text-align: center;
+            h1{
+                font-size: 2rem;
+            }
+        }
+
+        .imgPortada{
+            width: 250px;
+            height: 150px;
+        }
+    }
+    .mainFlex{
+        .sectionFlex{
+            h2{
+                margin-top: 2rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .voluntariado{
+        .voluntariadoPortada{
+            h2{
+                margin-top: 2rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
 

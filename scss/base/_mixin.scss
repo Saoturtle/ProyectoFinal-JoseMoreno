@@ -31,13 +31,16 @@
     font-size: 20px;
 }
 
-@mixin tipovalores {
-    align-self: center;
-    justify-self: center;
-    text-align: center;
+@mixin tipoValores{
+    gap: 3rem;
+    width: 65%;
+    border: 2px solid $color-principal;
+    margin-top: 10rem;
+    border-radius: 10px;
+    padding: 100px 10px 25px 20px;
 }
 
-@mixin imgtipovalores{
+@mixin center{
     align-items: center;
     justify-self: center;
     text-align: center;
