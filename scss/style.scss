@@ -13,6 +13,14 @@ p{
     font-weight: 500;
 }
 
+li{
+    color: $color-texto;
+    font-family: Helvetica;
+    font-weight: 500;
+}
+
+
+
 a{
     @include hover;
 }
